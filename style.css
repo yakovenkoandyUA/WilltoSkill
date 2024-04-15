@@ -3,6 +3,8 @@
 	src: url(./Furore.woff2);
 }
 
+a { text-decoration: none;}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -402,4 +404,14 @@ nav {
 
 .form_section {
 	padding-bottom: 80px;
+}
+
+
+.istr-title {
+	font-family: 'Furore';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+	margin-block: 24px;
+	text-align: center;
 }
