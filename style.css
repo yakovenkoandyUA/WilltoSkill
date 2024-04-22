@@ -3,7 +3,9 @@
 	src: url(./Furore.woff2);
 }
 
-a { text-decoration: none;}
+a {
+	text-decoration: none;
+}
 
 * {
 	margin: 0;
@@ -219,10 +221,9 @@ nav {
 @media (min-width: 768px) {
 	.partners-img {
 		margin: 0 auto;
-    display: block;
+		display: block;
 	}
 }
-	
 
 .menu1.active {
 	opacity: 1;
@@ -406,7 +407,6 @@ nav {
 	padding-bottom: 80px;
 }
 
-
 .istr-title {
 	font-family: 'Furore';
 	font-size: 24px;
@@ -414,4 +414,90 @@ nav {
 	line-height: 36px;
 	margin-block: 24px;
 	text-align: center;
+}
+
+.label {
+	position: relative;
+}
+
+.categ_btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	width: 100%;
+	margin-bottom: 18px;
+	border-radius: 6px;
+	border: none;
+	outline: none;
+	border: 1px solid #00000061;
+	background-color: inherit;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.list_categ {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+
+.list_categ-item {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	background-color: #f3f2f1;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #000;
+}
+
+.categ-item-icon {
+	padding: 4px 7px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-right: 8px;
+}
+
+.categ-item-text {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.list_categ-item img {
+	margin-left: auto;
+}
+
+.list_categ-item:nth-child(2) {
+	background-color: #e3ebff;
+}
+.list_categ-item:nth-child(3) {
+	background-color: #dbf1e9;
+}
+.list_categ-item:nth-child(4) {
+	background-color: #f3f2f1;
+}
+
+.list_categ-item1 {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #00000061;
+}
+
+.list_categ-item1 img {
+	margin-left: auto;
+}
+
+.back {
+	text-decoration: none;
+	color: #038b77;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	display: flex;align-items: center;
+	column-gap: 5px;
+	margin-top: 16px;
 }
