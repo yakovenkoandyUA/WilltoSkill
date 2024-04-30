@@ -10,13 +10,17 @@
 <body>
     <header class="form">
 			<nav>
-			<a href="./index.html"><h1 class="title">Logo</h1></a>  
+			<a href="../index.html"><h1 class="title">Logo</h1></a>  
 
 				<div class="select">
-					<p class="select-text">🇺🇦 Uk</p>
+					<p class="select-text-value">🇺🇦 Uk</p>
 					<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M0 0.5L5 5.5L10 0.5H0Z" fill="white" />
 					</svg>
+                    <div class="select_list">
+						<p class="select-text">🏴󠁧󠁢󠁥󠁮󠁧󠁿 En</p>
+						<p class="select-text">🇺🇦 Uk</p>
+					</div>
 				</div>
 
 				<div class="burger">
@@ -69,7 +73,11 @@
                     </div>
                 </label>
                 <label class="label">
-                    <p class="label_text">Країна*</p>
+                    <p class="label_text">Країна запиту*</p>
+                    <input type="text" class="label_field" placeholder="Оберіть країну">
+                </label>
+                <label class="label">
+                    <p class="label_text">Країна мешкання*</p>
                     <input type="text" class="label_field" placeholder="Оберіть країну">
                 </label>
                 <label class="label">
@@ -95,6 +103,6 @@
                 <button class="form_sbmt" >Опублікувати</button>
             </form>
         </section>
-        <script src="./index.js"></script>
+        <script src="../index.js"></script>
 </body>
 </html>

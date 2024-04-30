@@ -48,6 +48,27 @@ nav {
 	color: #fff;
 	margin-left: auto;
 	margin-right: 30px;
+	position: relative;
+}
+
+
+
+.select_list {
+	position: absolute;
+	right: 0;
+	top: -100%;
+	z-index: 1;
+	width: 100%;
+	background-color: #031813;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.select_list.active {
+	opacity: 1;
+	top: 100%;
+	pointer-events: all;
 }
 
 .burger {
@@ -107,7 +128,7 @@ nav {
 }
 
 .btn {
-	padding: 12px 60px;
+	padding: 12px 50px;
 	background-color: #038b77;
 	border-radius: 6px;
 	border: none;
