@@ -1,0 +1,142 @@
+// @import '../../scss/helpers/typography.scss';
+// @import '../../scss/helpers/variable.scss';
+// @import '../../scss/helpers/mixins.scss';
+
+
+
+header {
+	padding: 20px;
+	background-image: url(../../../public/Baner.png);
+	background-size: cover;
+	background-position: 0;
+	background-repeat: no-repeat;
+	height: 60vh;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19.36px;
+	text-transform: uppercase;
+	color: aliceblue;
+}
+
+.select {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	color: #fff;
+	margin-left: auto;
+	margin-right: 30px;
+	position: relative;
+}
+
+.select_list {
+	position: absolute;
+	right: 0;
+	top: -100%;
+	z-index: 1;
+	width: 100%;
+	background-color: #031813;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.select_list.active {
+	opacity: 1;
+	top: 100%;
+	pointer-events: all;
+}
+
+.burger {
+	display: flex;
+	flex-direction: column;
+	height: 15px;
+	width: 20px;
+	justify-content: space-between;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+}
+
+.symbol {
+	object-fit: cover;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+.menu {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f4f4;
+	padding: 1em;
+	gap: 40px;
+}
+.menu_title {
+	font-family: 'Furore';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+	color: #fff;
+	margin-bottom: 12px;
+}
+
+.menu_mail {
+	display: block;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.menu_lang {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+
+.menu1.active {
+	opacity: 1;
+	bottom: 0;
+	z-index: 2;
+}
+
+.menu1 {
+	opacity: 0;
+	transition: all 0.5s;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	height: 100vh;
+	background-color: #031813;
+	padding-top: 60px;
+}
+
+.menu1_logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-block: 20px;
+}
+.container {
+	padding-inline: 20px;
+}
