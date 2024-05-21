@@ -89,6 +89,20 @@ nav {
 	display: block;
 }
 
+
+
+.menu {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f4f4;
+	padding: 1em;
+	gap: 40px;
+}
 .container {
 	padding-inline: 20px;
 }
@@ -105,19 +119,6 @@ nav {
 	line-height: 24px;
 	margin-bottom: 24px;
 	font-weight: 400;
-}
-
-.menu {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f4f4f4;
-	padding: 1em;
-	gap: 40px;
 }
 
 .buttons {
@@ -559,8 +560,7 @@ nav {
 	border: none;
 }
 
-.search_icon,
-.search_icon-skrepka {
+.search_icon {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -570,9 +570,19 @@ nav {
 	left: 15px;
 }
 
-.search_icon-skrepka {
+.label-file {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 20px;
 	width: 20px;
+}
+.label-file img {
+	width: 100%;
+}
+
+.label-field {
+	display: none;
 }
 
 .search-btn {
@@ -588,4 +598,10 @@ nav {
     color: #fff;
     font-weight: 600;
     text-decoration: none;
+}
+
+.name-file {
+	text-align: right;
+	color: white;
+    margin-top: 20px;
 }

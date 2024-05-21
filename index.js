@@ -147,3 +147,19 @@ window.addEventListener('DOMContentLoaded', () => {
 		langSwitch13 ? (langSwitch13.textContent = 'Тварини') : null
 	}
 })
+
+
+
+
+const file = document.querySelector('.label-field')
+
+file?.addEventListener('change', e => {
+	const file = e.target.files[0]
+	console.log(file)
+
+	const searchBtn = document.querySelector('.search-btn')
+	const nameFile = document.createElement('p')
+	nameFile.classList.add('name-file')
+	nameFile.textContent = file.name
+	searchBtn.before(nameFile)
+})
