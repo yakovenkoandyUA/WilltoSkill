@@ -387,7 +387,7 @@ nav {
 }
 
 .label_text {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	margin-bottom: 10px;
@@ -395,6 +395,7 @@ nav {
 }
 
 .label_field {
+	font-size: 16px;
 	padding: 12px;
 	width: 100%;
 	margin-bottom: 18px;
@@ -604,4 +605,14 @@ nav {
 	text-align: right;
 	color: white;
     margin-top: 20px;
+}
+
+
+@media (min-width: 700px) {
+	.allow {
+		padding-inline: 200px;
+	}
+
+
+	
 }
